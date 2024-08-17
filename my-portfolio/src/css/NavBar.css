@@ -1,0 +1,132 @@
+.shadow-effect {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/************ Navbar Css ************/
+nav.navbar {
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  0.32s ease-in-out;
+    background-color: red;
+}
+nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color: #121212;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: black !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 18px;
+    opacity: 0.75;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+span.navbar-text {
+    display: flex;
+    align-items: center;
+}
+
+/************ Social icons ************/
+.social-icon {
+    display: inline-block;
+    margin-left: 14px;
+}
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #252525;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+    width: 40%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+.social-icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/************ Contact Button ************/
+.navbar-text button {
+    font-weight: 700;
+    color: #303030;
+    border: 1px solid #535353;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-text button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #303030;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover::before {
+    width: 100%;
+}
+.navbar-text button:hover {
+  color: #ffffff;
+}
+/************ Navbar toggle ************/
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+
+/************ Responsive Styles ************/
+@media (max-width: 767px) { /* Adjust this breakpoint as needed */
+    .navbar-collapse.show {
+        display: block;
+        padding-top: 6px;
+        margin-top: 6px;
+        border-top: #121212 1px solid;
+    }
+    nav.navbar .navbar-nav .nav-link.navbar-link {
+        text-align: center;
+    }
+    .navbar-text {
+        margin-top: 10px;
+        flex-direction: column; /* Stack items vertically in smaller screens */
+    }
+    .social-icon {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
