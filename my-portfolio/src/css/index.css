@@ -2,13 +2,28 @@ body {
   /* diameter of the circle */
   --d: 1px; 
   
-  background : radial-gradient(
+  
+  background-image: radial-gradient(
     circle at 
-       var(--d) 
-       var(--d), 
-       
-    #000 calc(var(--d) - 1px), 
-    #0000 var(--d)
-  ) 
-  0 0 / 50px 50px;
+      var(--d) 
+      var(--d), 
+      
+    var(--secondary-color) calc(var(--d) - 1px), 
+    var(--primary-color) var(--d)
+  );
+  
+  background-size: 50px 50px;
 }
+
+:root {
+  --primary-color: white;
+  --secondary-color: rgb(27, 27, 27);
+  --inbetween-color: #eeeeee;
+}
+
+/* :root {
+  --primary-color: rgb(27, 27, 27);
+  --secondary-color: white;
+  --inbetween-color: #161616;
+} */
+

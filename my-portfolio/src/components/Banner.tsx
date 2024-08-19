@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <section className="banner-section" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row>
           <Col xs={12} md={6} xl={7}>
               <div>
                 <span>Welcome to my Portfolio</span>

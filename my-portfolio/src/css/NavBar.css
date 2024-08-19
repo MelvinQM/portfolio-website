@@ -1,8 +1,10 @@
-.shadow-effect {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
+
 
 /************ Navbar Css ************/
+.logo {
+    color: var(--secondary-color);
+}
+
 nav.navbar {
     padding: 16px 0;
     position: fixed;
@@ -10,15 +12,17 @@ nav.navbar {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
-    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background-color: var(--primary-color);
 }
 nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: #121212;
+    background-color: var(--inbetween-color);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
-    color: black !important;
+    color: var(--secondary-color) !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
     font-size: 18px;
@@ -41,21 +45,21 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: var(--primary-color);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--secondary-color);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #252525;
+    background-color: var(--secondary-color);
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
@@ -63,21 +67,22 @@ span.navbar-text {
 .social-icon a:hover::before {
     transform: scale(1);
 }
-.social-icon a img {
-    width: 40%;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
-    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+
+.social-svg {
+    color: var(--secondary-color);
+    z-index: 1; /* Ensure the SVG is above the ::before element */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
 }
-.social-icon a:hover img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+
+.social-icon a:hover .social-svg {
+    color: var(--primary-color); /* Change color on hover */
 }
 
 /************ Contact Button ************/
 .navbar-text button {
     font-weight: 700;
-    color: #303030;
-    border: 1px solid #535353;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     padding: 18px 34px;
     font-size: 18px;
     margin-left: 18px;
@@ -91,7 +96,7 @@ span.navbar-text {
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #303030;
+    background-color: var(--secondary-color);
     left: 0;
     top: 0;
     z-index: -1;
@@ -101,7 +106,7 @@ span.navbar-text {
     width: 100%;
 }
 .navbar-text button:hover {
-  color: #ffffff;
+  color: var(--primary-color);
 }
 /************ Navbar toggle ************/
 nav.navbar .navbar-toggler:active,
@@ -116,7 +121,6 @@ nav.navbar .navbar-toggler:focus {
         display: block;
         padding-top: 6px;
         margin-top: 6px;
-        border-top: #121212 1px solid;
     }
     nav.navbar .navbar-nav .nav-link.navbar-link {
         text-align: center;
@@ -129,4 +133,3 @@ nav.navbar .navbar-toggler:focus {
         margin-bottom: 10px; /* Adjust margin for smaller screens */
     }
 }
-
