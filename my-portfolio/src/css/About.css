@@ -5,26 +5,26 @@
 }
 
 .content {
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-bottom: 5rem;
     color: var(--primary-color);
 }
+
+.content h1, p {
+  text-align: center;
+  width: 100%;
+}
+
+.content p {
+  margin-top: 2em;
+  color: var(--inbetween-color);
+}
+
 
 /*
 https://www.youtube.com/watch?v=hWGgw1K-i8Y
 https://css-generators.com/
 */
-
-/* .box {
-    --mask:
-      radial-gradient(67.08px at 50% 90px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-      radial-gradient(67.08px at 50% -60px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-      radial-gradient(67.08px at 50% calc(100% - 90px),#000 99%,#0000 101%) 50% 100%/120px 51% repeat-x,
-      radial-gradient(67.08px at 50% calc(100% + 60px),#0000 99%,#000 101%) calc(50% - 60px) calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
-} */
-
 .box {
   --mask:
     radial-gradient(67.08px at 50% 90px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,

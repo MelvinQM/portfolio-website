@@ -70,12 +70,12 @@ span.navbar-text {
 
 .social-svg {
     color: var(--secondary-color);
-    z-index: 1; /* Ensure the SVG is above the ::before element */
-    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
 }
 
 .social-icon a:hover .social-svg {
-    color: var(--primary-color); /* Change color on hover */
+    color: var(--primary-color);
 }
 
 /************ Contact Button ************/
@@ -116,7 +116,7 @@ nav.navbar .navbar-toggler:focus {
 }
 
 /************ Responsive Styles ************/
-@media (max-width: 767px) { /* Adjust this breakpoint as needed */
+@media (max-width: 767px) {
     .navbar-collapse.show {
         display: block;
         padding-top: 6px;
@@ -127,9 +127,9 @@ nav.navbar .navbar-toggler:focus {
     }
     .navbar-text {
         margin-top: 10px;
-        flex-direction: column; /* Stack items vertically in smaller screens */
+        flex-direction: column;
     }
     .social-icon {
-        margin-bottom: 10px; /* Adjust margin for smaller screens */
+        margin-bottom: 10px;
     }
 }

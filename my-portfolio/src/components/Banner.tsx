@@ -10,10 +10,17 @@ const Banner = () => {
       <Container>
         <Row>
           <Col xs={12} md={6} xl={7}>
-              <div>
-                <span>Welcome to my Portfolio</span>
+              <div className='banner-text'>
                 <h1>{`Hi! I'm Melvin`}</h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>
+                  Hello, my name is Melvin. I'm currently in my third year at the
+                  <a className="ms-1 fw-bold" href="https://www.hva.nl/">Amsterdam University Of Applied Sciences</a>
+                  .&nbsp;In addition to my studies, I work part-time as a software developer at Chipsoft.
+                </p>
+                <p>
+                  
+                  I enjoy learning new skills in fields such as Software Development, Embedded Systems and Game Development.
+                </p>
               </div>
           </Col>
           <Col xs={12} md={6} xl={5}>

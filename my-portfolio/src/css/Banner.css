@@ -1,25 +1,40 @@
 .banner-section {
-    margin-top: 10%;
-    color: var(--secondary-color);
+  margin-top: 16%;
+  color: var(--secondary-color);
 }
 
 .banner-image-wrapper {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+  margin-left: 20%; /*FUTURE MELVIN MAKE THIS CENTER THIS SUCKS*/
 }
 
 .banner-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 520px;
-    background: linear-gradient(to right, #228838, var(--secondary-color));
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 520px;
+  background: linear-gradient(to right, #adc7b2, var(--secondary-color));
+  z-index: 1;
 }
 
 .banner-image {
-    position: relative;
-    margin: 4px;
-    z-index: 2;
+  position: relative;
+  margin: 4px;
+  height: 25em;
+  width: 25em;
+  z-index: 2;
 }
 
+.banner-text {
+  margin-top: 10%;
+}
+
+.banner-text p {
+  line-height: 30px;
+}
+
+.banner-text p a {
+  color: inherit;
+  text-decoration: none;
+}
