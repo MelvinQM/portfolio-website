@@ -4,20 +4,23 @@
     background: var(--secondary-color);
 }
 
-.content {
+.experience-content {
     padding-top: 7rem;
     padding-bottom: 5rem;
     color: var(--primary-color);
 }
 
-.content h1, p {
+.experience-content h1, p{
   text-align: center;
-  width: 100%;
 }
 
-.content p {
+.experiences-container {
   margin-top: 2em;
-  color: var(--inbetween-color);
+}
+
+.experience {
+  display: flex;
+  margin-bottom: 2em;
 }
 
 
