@@ -12,13 +12,13 @@ nav.navbar {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px 0px;
     background-color: var(--primary-color);
 }
 nav.navbar.scrolled {
     padding: 0px 0;
     background-color: var(--inbetween-color);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px 0px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
@@ -53,6 +53,10 @@ span.navbar-text {
     justify-content: center;
     line-height: 1;
     border: 1px solid var(--secondary-color);
+}
+
+nav.navbar.scrolled .social-icon a{
+    background-color: var(--inbetween-color);
 }
 .social-icon a::before {
     content: "";
