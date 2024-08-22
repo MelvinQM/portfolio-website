@@ -1,8 +1,6 @@
-import React from 'react'
-import { useState, useEffect } from "react";
+import '../css/Banner.css'
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/melvin.png";
-import '../css/Banner.css'
 
 const Banner = () => {
   return (
