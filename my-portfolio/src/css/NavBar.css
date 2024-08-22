@@ -1,9 +1,37 @@
 
 
 /************ Navbar Css ************/
-.logo {
+.navbar-logo {
     color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
 }
+
+.navbar-logo-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-logo-m-left {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.navbar-logo-m-right {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+
 
 nav.navbar {
     padding: 16px 0;

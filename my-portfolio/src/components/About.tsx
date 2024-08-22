@@ -44,7 +44,7 @@ const About = () => {
           skills: [""],
           description:"My activities at Compuclub include managing company's email correspondence," +
                       "invoicing payments, and various tasks such as creating logos/posters and more in Photoshop."
-      }
+      },
   ]
 
 
@@ -72,7 +72,7 @@ const About = () => {
                     <div className='d-flex fw-bold'>
                       <div className='text-start'>{x.jobTitle}</div>
                       <div>&nbsp;&mdash;&nbsp;</div>
-                      <div className='experience-company '>{x.companyURL ? (<a className="custom-a" href={x.companyURL}>{x.company}</a>): <>{x.company}</>}</div>
+                      <div>{x.companyURL ? (<a className="custom-a" href={x.companyURL}>{x.company}</a>): <>{x.company}</>}</div>
                     </div>
                     <div className='experience-skills'>
                       {x.skills.map((skill) => (<div className='me-2'>{skill}</div>))}

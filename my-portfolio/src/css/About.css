@@ -15,7 +15,7 @@
 }
 
 .experiences-container {
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .experience {
@@ -26,12 +26,9 @@
 .experience-skills {
   text-align: left;
   display: flex;
-  color: #8b8b8b;
+  color: var(--subtext-color);
 }
 
-.experience-company {
-  color: var(--portfolio-green);
-}
 
 
 

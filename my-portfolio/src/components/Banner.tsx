@@ -14,7 +14,7 @@ const Banner = () => {
                 <div className='banner-text'>
                   <h1>{`Hi! I'm Melvin`}</h1>
                   <p>
-                    Hello, my name is Melvin. I'm currently in my third year at the
+                    Hello, my name is Melvin Moes. I'm currently in my third year at the
                     <a className="fw-bold custom-a" href="https://www.hva.nl/">&nbsp;Amsterdam University Of Applied Sciences.&nbsp;</a>
                     In addition to my studies, I work part-time as a software developer at Chipsoft.
                   </p>
