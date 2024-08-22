@@ -15,8 +15,8 @@ const Banner = () => {
                   <h1>{`Hi! I'm Melvin`}</h1>
                   <p>
                     Hello, my name is Melvin. I'm currently in my third year at the
-                    <a className="ms-1 fw-bold" href="https://www.hva.nl/">Amsterdam University Of Applied Sciences</a>
-                    .&nbsp;In addition to my studies, I work part-time as a software developer at Chipsoft.
+                    <a className="fw-bold custom-a" href="https://www.hva.nl/">&nbsp;Amsterdam University Of Applied Sciences.&nbsp;</a>
+                    In addition to my studies, I work part-time as a software developer at Chipsoft.
                   </p>
                   <p>
                     I enjoy learning new skills in fields such as Software Development, Embedded Systems and Game Development.

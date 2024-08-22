@@ -6,7 +6,7 @@
 .banner-image-wrapper {
   position: relative;
   display: inline-block;
-  margin-left: 20%; /*FUTURE MELVIN MAKE THIS CENTER THIS SUCKS*/
+  margin-left: 20%;
 }
 
 .banner-background {
@@ -14,7 +14,7 @@
   width: 100%;
   height: 100%;
   border-radius: 520px;
-  background: linear-gradient(to right, #adc7b2, var(--secondary-color));
+  background: linear-gradient(to right, var(--portfolio-green), var(--secondary-color));
   z-index: 1;
 }
 
@@ -32,9 +32,4 @@
 
 .banner-text p {
   line-height: 30px;
-}
-
-.banner-text p a {
-  color: inherit;
-  text-decoration: none;
 }

@@ -23,6 +23,17 @@
   margin-bottom: 2em;
 }
 
+.experience-skills {
+  text-align: left;
+  display: flex;
+  color: #8b8b8b;
+}
+
+.experience-company {
+  color: var(--portfolio-green);
+}
+
+
 
 /*
 https://www.youtube.com/watch?v=hWGgw1K-i8Y
@@ -35,6 +46,7 @@ https://css-generators.com/
   -webkit-mask: var(--mask);
           mask: var(--mask);
   background-color: var(--secondary-color);
+
 }
 
 

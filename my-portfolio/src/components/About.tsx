@@ -2,29 +2,48 @@ import React from 'react'
 import '../css/About.css'
 import { Col, Container, Row } from 'react-bootstrap'
 
+interface WorkExperience {
+  order: number,
+  date: string | string[],
+  jobTitle: string,
+  company: string,
+  companyURL?: string,
+  skills: string[],
+  description: string
+}
+
 const About = () => {
-  const workExperience =
+  const workExperience : WorkExperience[] =
     [
       {
           order: 2,
           date: "02/24 - 06/24",
           jobTitle: "Research & Development",
           company: "Van Berge Henegouwen",
-          description: "During my internship, I worked on creating a product from start to finish. I worked on 3D graphics with Three.js, web development with Typescript, and embedded programming through the Arduino library and C++."
+          companyURL: "https://www.vbhi.com/",
+          skills: ["C++", "Arduino", "WebGL", "Typescript", "Vue.js"],
+          description:"During my internship, I worked on creating a product from start to finish. " +
+                      "I worked on 3D graphics with Three.js, web development with Typescript, " +
+                      "and embedded programming through the Arduino library and C++."
       },
       {
           order: 1,
           date: ["08/23 - 01/24", "08/24 - Present"],
           jobTitle: "Research & Development",
           company: "Chipsoft",
-          description: "Worked on web development projects together with a team of students. I used programming languages: C# & Typescript, and also worked with frameworks: Next.js & Blazor."
+          companyURL: "https://www.chipsoft.com/",
+          skills: ["C#" , ".NET",  "Blazor"],
+          description:"Worked on web development projects together with a team of students. " + 
+                      "I used programming languages: C# & Typescript, and also worked with frameworks: Next.js & Blazor."
       },
       {
           order: 3,
           date: "01/20 - Present",
           jobTitle: "Helpdesk / Administration",
           company: "Compuclub",
-          description: "My activities at Compuclub include managing company's email correspondence, invoicing payments, and various tasks such as creating logos/posters and more in Photoshop."
+          skills: [""],
+          description:"My activities at Compuclub include managing company's email correspondence," +
+                      "invoicing payments, and various tasks such as creating logos/posters and more in Photoshop."
       }
   ]
 
@@ -52,8 +71,11 @@ const About = () => {
                   <div className='d-flex flex-column w-100'>
                     <div className='d-flex fw-bold'>
                       <div className='text-start'>{x.jobTitle}</div>
-                      <div className=''>&nbsp;-&nbsp;</div>
-                      <div className=''>{x.company}</div>
+                      <div>&nbsp;&mdash;&nbsp;</div>
+                      <div className='experience-company '>{x.companyURL ? (<a className="custom-a" href={x.companyURL}>{x.company}</a>): <>{x.company}</>}</div>
+                    </div>
+                    <div className='experience-skills'>
+                      {x.skills.map((skill) => (<div className='me-2'>{skill}</div>))}
                     </div>
                     <div className='text-start '>{x.description}</div>
                   </div>

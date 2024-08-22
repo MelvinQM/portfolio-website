@@ -19,6 +19,12 @@ body {
   --primary-color: white;
   --secondary-color: rgb(27, 27, 27);
   --inbetween-color: #eeeeee;
+  --portfolio-green: #adc7b2;
+}
+
+.custom-a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* :root {
