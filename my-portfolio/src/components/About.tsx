@@ -58,10 +58,10 @@ const About = () => {
             <p>My previous relevant work experience</p>
             <div className="experiences-container">
               {workExperience.slice().sort((x, y) => x.order - y.order).map(x => (
-                <Container className='experience' key={x.order}>
-                  <div className='w-25'>
+                <Container className='experience d-flex' key={x.order}>
+                  <div className='flex-shrink-0' style={{ width: '150px' }}>
                     {Array.isArray(x.date) ? (
-                      <div className='d-flex flex-column'>
+                      <div className='d-flex flex-column' >
                         {x.date.map((date, index) => (
                           <div className='me-4 fw-bold' key={index}>{date}</div>
                         ))}
@@ -77,7 +77,7 @@ const About = () => {
                     <div className='experience-skills'>
                       {x.skills.map((skill) => (<div className='me-2'>{skill}</div>))}
                     </div>
-                    <div className='text-start '>{x.description}</div>
+                    <div className='text-start'>{x.description}</div>
                   </div>
                 </Container>
               ))}
