@@ -50,6 +50,8 @@
 
 .item h6 {
   color: var(--subtext-color);
+  max-width: 75%;
+  word-wrap: break-word;
 }
 
 .circular-slider-wrapper {
@@ -62,4 +64,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
