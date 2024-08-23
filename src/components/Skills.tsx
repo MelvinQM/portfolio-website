@@ -65,8 +65,8 @@ const Skills = () => {
                         <h2>Skills</h2>
                         <p>Some of the skills I'm most proud of.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-    	                      {skills.map((skill) => (
-                              <div className='item'>
+    	                      {skills.map((skill, index) => (
+                              <div key={index} className='item'>
                                 <div className="circular-slider-wrapper">
                                   <CircularSliderWithChildren
                                     handle1={{ value: skill.percentage }}
@@ -79,8 +79,8 @@ const Skills = () => {
                                 </div>
 
                                 <h5>{skill.name}</h5>
-                                <h6>{skill.relatedSkills?.map((skill) => (
-                                  <>&nbsp;{skill}&nbsp;</>
+                                <h6>{skill.relatedSkills?.map((skill, index) => (
+                                  <span key={index}>&nbsp;{skill}&nbsp;</span>
                                 ))}</h6>
                               </div>
                             ))}

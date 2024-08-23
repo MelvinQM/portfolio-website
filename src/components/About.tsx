@@ -74,7 +74,7 @@ const About = () => {
                       <div>{x.companyURL ? (<a className="custom-a" href={x.companyURL}>{x.company}</a>): <>{x.company}</>}</div>
                     </div>
                     <div className='experience-skills'>
-                      {x.skills.map((skill) => (<div className='me-2'>{skill}</div>))}
+                      {x.skills.map((skill, index) => (<div key={index} className='me-2'>{skill}</div>))}
                     </div>
                     <div className='text-start'>{x.description}</div>
                   </div>
