@@ -51,7 +51,7 @@ const About = () => {
     <section className="box about-section" id="about">
       <Container>
         <Row className='justify-content-center'>
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={8}>
           <div className='experience-content'>
             <h1>Work Experience</h1>
             <p>My previous relevant work experience</p>
@@ -67,7 +67,7 @@ const About = () => {
                       </div>
                     ) : ( <div className='me-4 fw-bold'>{x.date}</div>)}
                   </div>
-                  <div className='d-flex flex-column w-100'>
+                  <div className='experience-header'>
                     <div className='d-flex fw-bold'>
                       <div className='text-start'>{x.jobTitle}</div>
                       <div>&nbsp;&mdash;&nbsp;</div>

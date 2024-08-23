@@ -5,8 +5,9 @@
 
 .banner-image-wrapper {
   position: relative;
-  display: inline-block;
-  margin-left: 20%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .banner-background {
@@ -20,9 +21,9 @@
 
 .banner-image {
   position: relative;
-  margin: 4px;
-  height: 25em;
-  width: 25em;
+  padding: 4px;
+  height: auto;
+  max-width: 100%;
   z-index: 2;
 }
 

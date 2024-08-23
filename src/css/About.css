@@ -1,6 +1,5 @@
 .about-section {
     margin-top: 12%;
-    height: 50rem;
     background: var(--secondary-color);
 }
 
@@ -29,6 +28,26 @@
   color: var(--subtext-color);
 }
 
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: column; /* Stacks items vertically on small screens */
+  }
+
+  .experience-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .experience-skills {
+    flex-wrap: wrap; /* Allows skill tags to wrap on small screens */
+  }
+}
 
 
 
